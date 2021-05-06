@@ -1,0 +1,14 @@
+If you are using eclipse please download the zip file and after extracting the zip file just add the folder in the eclipse using open projrct option. 
+
+If you are not using eclipse please use the given html and jsp file to use with along cmd and notepad ++
+
+** imp = please register first before login **
+
+errors: 
+
+1. due to this error - ( com.mysql.jdbc.driver cannot be resolved to a type ) | i have used - Class.forName("com.mysql.jdbc.Driver"); 
+
+if you still get error please change the line into - new com.mysql.jdbc.driver();
+
+
+2. java.lang.NullPointerException - if you get this error please fill some value in the table of mysql , if the table is empty it will null error
