@@ -1,24 +1,22 @@
-class Parent { 
-    void child()
+class First
+{
+    void disp()
     {
-        System.out.println("Parent's Child");
+        System.out.println("First class method");
     }
 }
-
-class Child extends Parent {
-    void child()
+ class Second extends First
+{
+    void disp()
     {
-        System.out.println("Parent's Grandchild");
+      System.out.println("Second class method");
     }
 }
-
-class Main {
-    public static void main(String[] args)
-    {
-        Parent c = new Parent(); 
-        c.child();
-        
-        Parent g = new Child(); 
-        g.child();
-    }
+class Main
+{
+public static void main(String... a)
+{
+    Second obj = new Second();
+    obj.disp();
+}
 }
