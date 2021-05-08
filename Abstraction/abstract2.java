@@ -1,34 +1,32 @@
-abstract class Input {
-    public abstract void takes();
-    public void error() 
-    { 
-        System.out.println("ERROR!!");
-    }
-}
+ abstract class Bike
+ {  
+   void Bike()     //method with body
+   {
+   	System.out.println("bike is created");
+   }  
+   
+   abstract void run();  //method without body
+   
+   void changeGear()
+   {
+   	System.out.println("gear changed");
+   }  
+ }  
+ 
+ class Honda extends Bike
+ {  
+ void run()
+ 	{
+ 		System.out.println("running safely..");
+ 	}  
+ }   
+ class Abstractj2
+ {  
+ 	public static void main(String args[]){  
+  	Bike obj = new Honda();  
+  	obj.Bike();
+  	obj.run();  
+  	obj.changeGear(); 
 
-class Keyboard extends Input { 
-    public void takes() 
-    {
-        System.out.println("Type Your Input Through Keyboard");
-    }
-}
-
-class Mouse extends Input { 
-    public void takes() 
-    {
-        System.out.println("Click On The Desired Input Through Mouse");
-    }
-}
-
-class Main {
-    public static void main(String[] args) 
-    {
-        Keyboard key = new Keyboard(); 
-        Mouse click = new Mouse(); 
-        
-        key.takes();
-        key.error(); 
-        click.takes(); 
-        click.error();
-    }
-}
+ }  
+}  
