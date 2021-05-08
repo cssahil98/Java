@@ -1,18 +1,26 @@
-class Addition{
-    static int add(int a, int b)
+class Overloading
+{
+    void area(float x)
     {
-        return a + b;
+        System.out.println("the area of the square is "+Math.pow(x, 2)+" sq units");
     }
-    static double add(double a, double b)
+    void area(float x, float y)
     {
-        return a + b;
+        System.out.println("the area of the rectangle is "+x*y+" sq units");
+    }
+    void area(double x)
+    {
+        double z = 3.14 * x * x;
+        System.out.println("the area of the circle is "+z+" sq units");
     }
 }
-
-class Main {
-    public static void main(String[] args)
-    {
-        System.out.println(Addition.add(7, 9));
-        System.out.println(Addition.add(3.1, 6.2));
-    }
+class Main
+{
+     public static void main(String args[]) 
+	{
+	   Overloading ob = new Overloading();
+	   ob.area(7);
+	   ob.area(11,15);
+	   ob.area(2.9);
+        }
 }
