@@ -1,18 +1,29 @@
-abstract class Bike{ 
-    abstract void run();
+abstract class Tree
+{
+	abstract void color();
 }
-
-class Honda4 extends Bike{
-    void run(){
-        System.out.println("running safely");
-        
-    } 
+class Neem 
+{
+	void color() 
+	{ 
+		System.out.println("color of a neem tree is green"); 
+	}
 }
-
-class Main{    
-    public static void main(String args[])
-    {
-        Bike obj = new Honda4(); 
-        obj.run();
-    }
+class Rose 
+{
+	void color() 
+	{ 
+		System.out.println("color of a Rose is Red"); 
+	}
+}
+class Main
+{
+	public static void main(String[] args) 
+	{
+		
+		Neem t=new Neem();
+		Rose r=new Rose();
+		t.color();
+		r.color();
+	}
 }
