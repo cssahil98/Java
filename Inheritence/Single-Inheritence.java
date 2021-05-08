@@ -1,23 +1,23 @@
-class Sports{
-    String type="Sports"; 
-    String where="Stadium";
-
-    void does(){
-        System.out.println("Playing");
-    }
+class Bird
+{
+	public void wings()
+	{
+		System.out.println("Birds have two wings");
+	}
 }
-
-class Cricket extends Sports{ 
-    String sporttype="Cricket";
+class Crow extends Bird
+{
+	public void legs()
+	{
+		System.out.println("Birds have two legs");
+	}
 }
-
-class Main{
-    public static void main(String args[]) { 
-        Cricket c = new Cricket(); 
-        System.out.println(c.sporttype); 
-        System.out.println(c.type); 
-        System.out.println(c.where); 
-        
-        c.does();
-    }
+class Main
+{
+	public static void main(String[] args) {
+		Crow c=new Crow();
+		c.wings();
+		c.legs();
+		
+	}
 }
